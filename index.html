@@ -8,7 +8,9 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500;700&display=swap" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -20,16 +22,27 @@
 
 
 <section id="component">
-  <div id="star-container">
+  <!-- images -->
+  <div id="image-container">
    <div id="star">
     <img src="images/icon-star.svg" alt="star">
    </div>
+   <div id="thankyou">
+    <img src="images/illustration-thank-you.svg" alt="thank you image">
+   </div>
   </div>
+
+  <!-- selected will display a message indicating which rating was chosen -->
+  <div id="selected"></div>
+
+  <!-- main heading and text -->
   <div id="text-container">
-    <h1>How did we do?</h1>
-    <p> Please let us know how we did with your support request. All feedback is appreciated 
+    <h1 id="headline">How did we do?</h1>
+    <p id="text"> Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!</p>
   </div>
+
+  <!-- the ratings 1-5 -->
   <div id="ratings">
     <div class="circle" id="rating-1">1</div>
     <div class="circle" id="rating-2">2</div>
@@ -68,5 +81,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="app.js" charset="utf-8"></script>>
 </body>
 </html>
